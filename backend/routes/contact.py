@@ -14,7 +14,6 @@ db: AsyncIOMotorDatabase = None
 def set_database(database: AsyncIOMotorDatabase):
     global db
     db = database
-    
 @router.options("/contact")
 async def options_contact():
     return {}
