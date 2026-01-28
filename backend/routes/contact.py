@@ -14,7 +14,10 @@ db: AsyncIOMotorDatabase = None
 def set_database(database: AsyncIOMotorDatabase):
     global db
     db = database
-
+    
+@router.options("/contact")
+async def options_contact():
+    return {}
 @router.post("/contact")
 async def create_contact_message(contact_data: ContactMessageCreate):
     """

@@ -92,11 +92,14 @@ app.include_router(contact.router, prefix="/api", tags=["contact"])
 # --------------------------------------------------
 app.add_middleware(
     CORSMiddleware,
+    allow_origins=[
+        "https://portfolio-dev23.onrender.com"
+    ],
     allow_credentials=True,
-    allow_origins=os.getenv("CORS_ORIGINS", "*").split(","),
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
 )
+
 
 # --------------------------------------------------
 # Logging
