@@ -67,7 +67,7 @@ const Contact = () => {
     }
 
     try {
-      const response = await axios.post(`${API}/contact`, formData);
+      const response = await axios.post(`${API}/Contact`, formData);
       
       if (response.data.success) {
         toast({
