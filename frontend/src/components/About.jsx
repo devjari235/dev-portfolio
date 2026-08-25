@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code2, Lightbulb, Target } from 'lucide-react';
+import { Layers, Bot, Briefcase } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 
 const About = () => {
@@ -15,13 +15,13 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <p className="text-[#9CA3AF] text-lg leading-relaxed mb-6">
-                I'm a full-stack web developer with hands-on experience in building real-world web applications using <span className="text-[#38FF62] font-medium">ASP.NET, C#, SQL Server, JavaScript, and Bootstrap</span>.
+                I'm an <span className="text-[#38FF62] font-medium">MSc IT</span> student and software developer with hands-on experience building full-stack web applications and AI-powered automation systems.
               </p>
               <p className="text-[#9CA3AF] text-lg leading-relaxed mb-6">
-                I've worked on complete systems like <span className="text-[#E5E7EB] font-medium">Society Management Systems</span>, including modules for notices, polling, user management, payments, and dashboards.
+                I've worked with technologies including <span className="text-[#E5E7EB] font-medium">ASP.NET, React.js, Node.js, Java, PHP, MongoDB, MySQL, n8n, OpenAI API</span> and WhatsApp APIs. My projects range from enterprise-style management systems to AI-powered customer and appointment automation.
               </p>
               <p className="text-[#9CA3AF] text-lg leading-relaxed">
-                I enjoy creating clean, efficient, and user-friendly solutions, and I'm currently focused on <span className="text-[#38FF62] font-medium">automation tools, AI-based solutions, and scalable web apps</span> that help businesses save time and increase efficiency.
+                Through <span className="text-[#38FF62] font-medium">Fixera Automation</span>, I've also worked on real-world AI solutions, including a live WhatsApp product recommendation system for Kiyara Botanics and AI appointment-booking workflows.
               </p>
             </div>
             
@@ -29,11 +29,11 @@ const About = () => {
               <Card className="bg-[#111827] border-[#1F2937] hover:border-[#38FF62] transition-all duration-300">
                 <CardContent className="p-6 flex items-start gap-4">
                   <div className="bg-[#38FF62]/10 p-3 rounded-lg">
-                    <Code2 className="text-[#38FF62]" size={24} />
+                    <Layers className="text-[#38FF62]" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-[#E5E7EB] font-semibold mb-2">Clean Code</h3>
-                    <p className="text-[#9CA3AF] text-sm">Writing maintainable and efficient code that follows best practices</p>
+                    <h3 className="text-[#E5E7EB] font-semibold mb-2">Full-Stack Development</h3>
+                    <p className="text-[#9CA3AF] text-sm">Building applications across frontend, backend and databases</p>
                   </div>
                 </CardContent>
               </Card>
@@ -41,11 +41,11 @@ const About = () => {
               <Card className="bg-[#111827] border-[#1F2937] hover:border-[#38FF62] transition-all duration-300">
                 <CardContent className="p-6 flex items-start gap-4">
                   <div className="bg-[#38FF62]/10 p-3 rounded-lg">
-                    <Target className="text-[#38FF62]" size={24} />
+                    <Bot className="text-[#38FF62]" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-[#E5E7EB] font-semibold mb-2">Problem Solver</h3>
-                    <p className="text-[#9CA3AF] text-sm">Focused on building solutions that solve real-world business problems</p>
+                    <h3 className="text-[#E5E7EB] font-semibold mb-2">AI & Automation</h3>
+                    <p className="text-[#9CA3AF] text-sm">Building AI agents and automated workflows using APIs and n8n</p>
                   </div>
                 </CardContent>
               </Card>
@@ -53,11 +53,11 @@ const About = () => {
               <Card className="bg-[#111827] border-[#1F2937] hover:border-[#38FF62] transition-all duration-300">
                 <CardContent className="p-6 flex items-start gap-4">
                   <div className="bg-[#38FF62]/10 p-3 rounded-lg">
-                    <Lightbulb className="text-[#38FF62]" size={24} />
+                    <Briefcase className="text-[#38FF62]" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-[#E5E7EB] font-semibold mb-2">Innovation</h3>
-                    <p className="text-[#9CA3AF] text-sm">Exploring AI automation and modern technologies to build smarter applications</p>
+                    <h3 className="text-[#E5E7EB] font-semibold mb-2">Real-World Solutions</h3>
+                    <p className="text-[#9CA3AF] text-sm">Developing practical software for business workflows and client requirements</p>
                   </div>
                 </CardContent>
               </Card>

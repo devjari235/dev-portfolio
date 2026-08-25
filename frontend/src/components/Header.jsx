@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, FileText } from 'lucide-react';
 import { Button } from './ui/button';
+import { resumeFile } from '../data/mock';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,12 +64,26 @@ const Header = () => {
             >
               Experience
             </button>
+            <button
+              onClick={() => window.open(resumeFile, '_blank')}
+              className="text-[#E5E7EB] hover:text-[#38EF62] transition-colors text-sm font-medium"
+            >
+              Resume
+            </button>
             <Button
               onClick={() => scrollToSection('contact')}
               className="bg-[#38FF62] text-[#0B0F14] hover:bg-[#2AE052] font-medium"
             >
               Contact
             </Button>
+            {/* <Button
+              onClick={() => window.open(resumeFile, '_blank')}
+              variant="outline"
+              className="border-[#1F2937] text-[#E5E7EB] hover:bg-[#22C55E] px-8 py-6 text-lg"
+            >
+              <FileText size={10} className="mr-2" />
+              Resume
+            </Button> */}
           </div>
 
           {/* Mobile Menu Button */}

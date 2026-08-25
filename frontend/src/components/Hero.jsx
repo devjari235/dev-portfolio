@@ -1,6 +1,7 @@
 import React from 'react';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, FileText } from 'lucide-react';
 import { Button } from './ui/button';
+import { socialLinks, resumeFile } from '../data/mock';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -33,7 +34,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6 animate-fadeIn">
             <span className="inline-block px-4 py-2 bg-[#111827] border border-[#1F2937] rounded-full text-[#38FF62] text-sm font-medium mb-6">
-              Full-Stack Web Developer
+              Software Developer | Full-Stack & AI Automation
             </span>
           </div>
           
@@ -42,10 +43,10 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-[#9CA3AF] mb-12 leading-relaxed animate-fadeIn" style={{ animationDelay: '0.2s' }}>
-            I build smart web applications and automation tools that solve real-world problems.
+            I build full-stack applications and AI-powered automation systems that solve real-world business problems.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeIn" style={{ animationDelay: '0.3s' }}>
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center animate-fadeIn" style={{ animationDelay: '0.3s' }}>
             <Button
               onClick={scrollToProjects}
               className="bg-[#38FF62] text-[#0B0F14] hover:bg-[#2AE052] px-8 py-6 text-lg font-medium"
@@ -60,6 +61,25 @@ const Hero = () => {
               Get In Touch
             </Button>
           </div>
+
+          {/* <div className="flex gap-4 justify-center mt-8 animate-fadeIn" style={{ animationDelay: '0.4s' }}>
+            <a
+              href={socialLinks.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#111827] border border-[#1F2937] p-3 rounded-lg hover:border-[#38FF62] transition-all duration-300 group"
+            >
+              <Github className="text-[#E5E7EB] group-hover:text-[#38FF62] transition-colors" size={20} />
+            </a>
+            <a
+              href={socialLinks.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#111827] border border-[#1F2937] p-3 rounded-lg hover:border-[#38FF62] transition-all duration-300 group"
+            >
+              <Linkedin className="text-[#E5E7EB] group-hover:text-[#38FF62] transition-colors" size={20} />
+            </a>
+          </div> */}
         </div>
       </div>
       

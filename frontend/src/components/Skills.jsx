@@ -16,6 +16,24 @@ const Skills = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card className="bg-[#0B0F14] border-[#1F2937] hover:border-[#38FF62] transition-all duration-300">
               <CardHeader>
+                <CardTitle className="text-[#E5E7EB] text-xl">Languages</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {skills.languages.map((skill, index) => (
+                    <Badge
+                      key={index}
+                      className="bg-[#38FF62]/10 text-[#38FF62] border-[#38FF62]/20 hover:bg-[#38FF62]/20"
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-[#0B0F14] border-[#1F2937] hover:border-[#38FF62] transition-all duration-300">
+              <CardHeader>
                 <CardTitle className="text-[#E5E7EB] text-xl">Frontend</CardTitle>
               </CardHeader>
               <CardContent>
@@ -70,7 +88,7 @@ const Skills = () => {
             
             <Card className="bg-[#0B0F14] border-[#1F2937] hover:border-[#38FF62] transition-all duration-300">
               <CardHeader>
-                <CardTitle className="text-[#E5E7EB] text-xl">Automation</CardTitle>
+                <CardTitle className="text-[#E5E7EB] text-xl">AI & Automation</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
@@ -86,7 +104,7 @@ const Skills = () => {
               </CardContent>
             </Card>
             
-            <Card className="bg-[#0B0F14] border-[#1F2937] hover:border-[#38FF62] transition-all duration-300 md:col-span-2">
+            <Card className="bg-[#0B0F14] border-[#1F2937] hover:border-[#38FF62] transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-[#E5E7EB] text-xl">Tools</CardTitle>
               </CardHeader>

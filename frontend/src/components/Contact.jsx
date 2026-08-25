@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Mail, Send } from 'lucide-react';
+import { Mail, Send, Phone, MapPin } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { useToast } from '../hooks/use-toast';
+import { socialLinks } from '../data/mock';
 import axios from 'axios';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
@@ -96,9 +97,36 @@ const Contact = () => {
             Get In <span className="text-[#38FF62]">Touch</span>
           </h2>
           <div className="w-20 h-1 bg-[#38FF62] mx-auto mb-4"></div>
-          <p className="text-[#9CA3AF] text-center mb-12 max-w-2xl mx-auto">
+          <p className="text-[#9CA3AF] text-center mb-8 max-w-2xl mx-auto">
             Have a project in mind or want to collaborate? Feel free to reach out!
           </p>
+
+          <div className="grid sm:grid-cols-3 gap-4 mb-12">
+            <a
+              href={`mailto:${socialLinks.email}`}
+              className="flex items-center gap-3 bg-[#111827] border border-[#1F2937] rounded-lg p-4 hover:border-[#38FF62] transition-all duration-300"
+            >
+              <div className="bg-[#38FF62]/10 p-2 rounded-lg">
+                <Mail className="text-[#38FF62]" size={18} />
+              </div>
+              <span className="text-[#E5E7EB] text-sm break-all">{socialLinks.email}</span>
+            </a>
+            <a
+              href={`tel:${socialLinks.phone}`}
+              className="flex items-center gap-3 bg-[#111827] border border-[#1F2937] rounded-lg p-4 hover:border-[#38FF62] transition-all duration-300"
+            >
+              <div className="bg-[#38FF62]/10 p-2 rounded-lg">
+                <Phone className="text-[#38FF62]" size={18} />
+              </div>
+              <span className="text-[#E5E7EB] text-sm">{socialLinks.phone}</span>
+            </a>
+            <div className="flex items-center gap-3 bg-[#111827] border border-[#1F2937] rounded-lg p-4">
+              <div className="bg-[#38FF62]/10 p-2 rounded-lg">
+                <MapPin className="text-[#38FF62]" size={18} />
+              </div>
+              <span className="text-[#E5E7EB] text-sm">{socialLinks.location}</span>
+            </div>
+          </div>
           
           <Card className="bg-[#111827] border-[#1F2937]">
             <CardHeader>
